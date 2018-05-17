@@ -67,7 +67,7 @@ def get_subsample_probs(freqs,t):
         prob_dict[word] = P_keep
     return prob_dict
     
-def subsample(words, counts,threshold=0.001):
+def subsample(words, counts,threshold=0.0001):
     # Source: Mikolov et al., "Distributed representations of words
     #  and phrases and their compositionality" (2013)
     # We remove words from a dataset with a probability related 
@@ -125,7 +125,7 @@ with warnings.catch_warnings():
 
 # Parameters
 
-W = 5 # Window size
+W = 3 # Window size
 H = 300 # Number of neurons in hidden/embedding layer
 epochs = 10 # number of epochs
 batch_size = 1000
