@@ -8,6 +8,7 @@ from collections import defaultdict, Counter
 import tensorflow as tf
 import random
 import time
+import pickle
 #os.listdir('small_dataset')
 
 # All methods
@@ -16,23 +17,31 @@ def preprocess(text):
 
     # Replace punctuation with tokens so we can use them in our model
     text = text.lower()
-    text = text.replace('.', ' <PERIOD> ')
-    text = text.replace(',', ' <COMMA> ')
-    text = text.replace('"', ' <QUOTATION_MARK> ')
-    text = text.replace(';', ' <SEMICOLON> ')
-    text = text.replace('!', ' <EXCLAMATION_MARK> ')
-    text = text.replace('?', ' <QUESTION_MARK> ')
-    text = text.replace('(', ' <LEFT_PAREN> ')
-    text = text.replace(')', ' <RIGHT_PAREN> ')
-    text = text.replace('--', ' <HYPHENS> ')
-    text = text.replace('?', ' <QUESTION_MARK> ')
-    # text = text.replace('\n', ' <NEW_LINE> ')
-    text = text.replace(':', ' <COLON> ')
+    text = text.replace('.', '')
+    text = text.replace(',', '')
+    text = text.replace('"', '')
+    text = text.replace(';', '')
+    text = text.replace('!', '')
+    text = text.replace('?', '')
+    text = text.replace('(', '')
+    text = text.replace(')', '')
+    text = text.replace('--', '')
+    text = text.replace('?', '')
+    text = text.replace(':', '')
+    # Remove digits from text
+    text = ''.join([i for i in text if not i.isdigit()])
     words = text.split()
     
     # Remove all words with  5 or fewer occurences
     word_counts = Counter(words)
-    trimmed_words = [word for word in words if word_counts[word] > 5]
+    trimmed_words = []
+    for word in words:
+        if word_counts[word] > 5:
+            trimmed_words.append(word)
+        elif word_counts[word] > 2:
+            trimmed_words.append('<UNK>')
+        # Words occuring less than 3 times in the vocabulary are thrown out
+    
 
     return trimmed_words
 
@@ -135,6 +144,14 @@ words = set(word_set)
 # Build usefull word2int and reverse dictionary.
 word2int={word:i for i,word in enumerate(words)}
 int2word={i:word for i,word in enumerate(words)}
+
+with open('w2i.skip','wb') as f:
+    pickle.dump(word2int, f)
+
+with open('i2w.skip','wb') as f:
+    pickle.dump(int2word,f)
+
+print('word2int & int2word pickled successfully.')
 train_words = [word2int[word] for word in word_set]
 V = len(words) # Vocabulary size
 print("Reading in and preprocessing data took {} seconds.".format(time.time()-start))
@@ -167,7 +184,7 @@ with g.as_default():
     # Words that appear in the context of these input words
     labels = tf.placeholder(tf.int32, [None,None],name='labels')
     # The embedding matrix that we want to obtain/ train
-    embedding = tf.Variable(tf.random_uniform((V, H), -1, 1))
+    embedding = tf.Variable(tf.random_uniform((V, H), -1, 1),name='embedding')
     
     # This gives the hidden layer output for each of the inputs
     embed = tf.nn.embedding_lookup(embedding, inputs)
@@ -188,7 +205,7 @@ with g.as_default():
     saver = tf.train.Saver()
 
     ## From Thushan Ganegedara's implementation
-    valid_size = 16 # Random set of words to evaluate similarity on.
+    valid_size = 16 # Randompick set of words to evaluate similarity on.
     valid_window = 100
     # pick 8 samples from (0,100) and (1000,1100) each ranges. lower id implies more frequent 
     valid_examples = np.array(random.sample(range(valid_window), valid_size//2))
@@ -246,7 +263,7 @@ with tf.Session(graph=g) as sess:
                     print(log)
             
             i += 1
-    save_path = saver.save(sess,"checkpoints/text8.ckpt")
+    save_path = saver.save(sess,"skip_checkpoints/text8.ckpt")
     #embed_mat = sess.run(normalized_embedding)
     
 #W1 = tf.Variable(tf.random_normal([V,H])) # W input --> hidden
@@ -260,7 +277,7 @@ with tf.Session(graph=g) as sess:
 #out = tf.nn.softmax(tf.add(tf.matmul(hidden_layer, W2),b2))
 
 
-
+print("WE ARE DONE TRAINING AND IT ONLY TOOK {} SECONDS :D :D:D:D".format(time.time()-start))
 
 
 
