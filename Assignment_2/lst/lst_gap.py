@@ -41,7 +41,9 @@ def read_eval_line(eval_line):
     #print(segments)
     instance_id = segments[1].strip()
     #print(instance_id)
-    for candidate_weight in segments[2:]:
+    print(segments[2:])
+    for candidate_weight in segments[2:-1]:
+        print(candidate_weight)
         if len(candidate_weight) > 0:
             delimiter_ind = candidate_weight.rfind(' ')
             candidate = candidate_weight[:delimiter_ind]
