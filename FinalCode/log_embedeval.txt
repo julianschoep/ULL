@@ -1,0 +1,245 @@
+/usr/local/lib/python3.5/dist-packages/matplotlib/__init__.py:1067: UserWarning: Duplicate key in file "/home/ubuntu/.config/matplotlib/matplotlibrc", line #2
+  (fname, cnt))
+/usr/local/lib/python3.5/dist-packages/matplotlib/__init__.py:1067: UserWarning: Duplicate key in file "/home/ubuntu/.config/matplotlib/matplotlibrc", line #3
+  (fname, cnt))
+2018-05-30 22:07:33,586 : ***** Transfer task : MR *****
+
+
+2018-05-30 22:07:33.623413: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2018-05-30 22:07:33.714372: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:898] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-05-30 22:07:33.714782: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:00:1e.0
+totalMemory: 11.17GiB freeMemory: 11.10GiB
+2018-05-30 22:07:33.714812: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+2018-05-30 22:07:34.057325: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-05-30 22:07:34.057393: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 
+2018-05-30 22:07:34.057404: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N 
+2018-05-30 22:07:34.057704: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10752 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0, compute capability: 3.7)
+INFO:tensorflow:Restoring parameters from ./ull-practical3-embedalign/model.best.validation.aer.ckpt
+2018-05-30 22:07:34,838 : Restoring parameters from ./ull-practical3-embedalign/model.best.validation.aer.ckpt
+2018-05-30 22:07:35,301 : Generating sentence embeddings
+2018-05-30 22:11:35,513 : Generated sentence embeddings
+2018-05-30 22:11:35,514 : Training pytorch-MLP-nhid0-adam-bs64 with (inner) 10-fold cross-validation
+/usr/local/lib/python3.5/dist-packages/SentEval-0.1.0-py3.5.egg/senteval/tools/classifier.py:123: UserWarning: volatile was removed and now has no effect. Use `with torch.no_grad():` instead.
+  Xbatch = Variable(devX[i:i + self.batch_size], volatile=True)
+/usr/local/lib/python3.5/dist-packages/SentEval-0.1.0-py3.5.egg/senteval/tools/classifier.py:124: UserWarning: volatile was removed and now has no effect. Use `with torch.no_grad():` instead.
+  ybatch = Variable(devy[i:i + self.batch_size], volatile=True)
+2018-05-30 22:14:04,285 : Best param found at split 1: l2reg = 1e-05                 with score 64.09
+2018-05-30 22:16:48,696 : Best param found at split 2: l2reg = 1e-05                 with score 64.38
+2018-05-30 22:19:34,375 : Best param found at split 3: l2reg = 1e-05                 with score 64.38
+2018-05-30 22:22:21,742 : Best param found at split 4: l2reg = 0.0001                 with score 64.42
+2018-05-30 22:24:53,704 : Best param found at split 5: l2reg = 0.001                 with score 64.53
+2018-05-30 22:27:46,128 : Best param found at split 6: l2reg = 0.0001                 with score 64.62
+2018-05-30 22:30:46,482 : Best param found at split 7: l2reg = 1e-05                 with score 64.39
+2018-05-30 22:33:42,292 : Best param found at split 8: l2reg = 0.0001                 with score 64.6
+2018-05-30 22:36:41,460 : Best param found at split 9: l2reg = 1e-05                 with score 64.61
+2018-05-30 22:39:24,108 : Best param found at split 10: l2reg = 0.001                 with score 64.52
+2018-05-30 22:39:27,182 : Dev acc : 64.45 Test acc : 63.45
+
+2018-05-30 22:39:27,183 : ***** Transfer task : CR *****
+
+
+2018-05-30 22:39:27.196044: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+2018-05-30 22:39:27.196100: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-05-30 22:39:27.196128: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 
+2018-05-30 22:39:27.196143: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N 
+2018-05-30 22:39:27.196312: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10752 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0, compute capability: 3.7)
+INFO:tensorflow:Restoring parameters from ./ull-practical3-embedalign/model.best.validation.aer.ckpt
+2018-05-30 22:39:27,861 : Restoring parameters from ./ull-practical3-embedalign/model.best.validation.aer.ckpt
+2018-05-30 22:39:28,423 : Generating sentence embeddings
+2018-05-30 22:40:46,758 : Generated sentence embeddings
+2018-05-30 22:40:46,758 : Training pytorch-MLP-nhid0-adam-bs64 with (inner) 10-fold cross-validation
+2018-05-30 22:41:58,571 : Best param found at split 1: l2reg = 1e-05                 with score 70.74
+2018-05-30 22:43:06,611 : Best param found at split 2: l2reg = 1e-05                 with score 69.8
+2018-05-30 22:44:15,499 : Best param found at split 3: l2reg = 1e-05                 with score 70.56
+2018-05-30 22:45:28,641 : Best param found at split 4: l2reg = 0.001                 with score 71.15
+2018-05-30 22:46:42,746 : Best param found at split 5: l2reg = 0.001                 with score 70.71
+2018-05-30 22:47:54,981 : Best param found at split 6: l2reg = 0.001                 with score 70.62
+2018-05-30 22:49:12,353 : Best param found at split 7: l2reg = 1e-05                 with score 70.18
+2018-05-30 22:50:23,261 : Best param found at split 8: l2reg = 1e-05                 with score 70.34
+2018-05-30 22:51:34,768 : Best param found at split 9: l2reg = 1e-05                 with score 70.69
+2018-05-30 22:52:48,592 : Best param found at split 10: l2reg = 0.001                 with score 70.64
+2018-05-30 22:52:49,934 : Dev acc : 70.54 Test acc : 68.92
+
+2018-05-30 22:52:49,934 : ***** Transfer task : MPQA *****
+
+
+2018-05-30 22:52:49.944251: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+2018-05-30 22:52:49.944299: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-05-30 22:52:49.944311: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 
+2018-05-30 22:52:49.944320: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N 
+2018-05-30 22:52:49.944438: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10752 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0, compute capability: 3.7)
+INFO:tensorflow:Restoring parameters from ./ull-practical3-embedalign/model.best.validation.aer.ckpt
+2018-05-30 22:52:50,627 : Restoring parameters from ./ull-practical3-embedalign/model.best.validation.aer.ckpt
+2018-05-30 22:52:50,976 : Generating sentence embeddings
+2018-05-30 22:53:54,223 : Generated sentence embeddings
+2018-05-30 22:53:54,224 : Training pytorch-MLP-nhid0-adam-bs64 with (inner) 10-fold cross-validation
+2018-05-30 22:56:21,022 : Best param found at split 1: l2reg = 1e-05                 with score 84.15
+2018-05-30 22:58:46,898 : Best param found at split 2: l2reg = 1e-05                 with score 83.81
+2018-05-30 23:01:26,705 : Best param found at split 3: l2reg = 0.001                 with score 83.82
+2018-05-30 23:04:05,435 : Best param found at split 4: l2reg = 1e-05                 with score 84.06
+2018-05-30 23:06:28,408 : Best param found at split 5: l2reg = 1e-05                 with score 83.94
+2018-05-30 23:08:52,405 : Best param found at split 6: l2reg = 0.01                 with score 83.85
+2018-05-30 23:11:15,501 : Best param found at split 7: l2reg = 1e-05                 with score 83.76
+2018-05-30 23:13:46,262 : Best param found at split 8: l2reg = 0.01                 with score 83.93
+2018-05-30 23:16:13,788 : Best param found at split 9: l2reg = 0.001                 with score 83.84
+2018-05-30 23:18:37,976 : Best param found at split 10: l2reg = 1e-05                 with score 83.54
+2018-05-30 23:18:41,681 : Dev acc : 83.87 Test acc : 83.58
+
+2018-05-30 23:18:41,682 : ***** Transfer task : SUBJ *****
+
+
+2018-05-30 23:18:41.712086: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+2018-05-30 23:18:41.712145: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-05-30 23:18:41.712155: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 
+2018-05-30 23:18:41.712162: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N 
+2018-05-30 23:18:41.712293: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10752 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0, compute capability: 3.7)
+INFO:tensorflow:Restoring parameters from ./ull-practical3-embedalign/model.best.validation.aer.ckpt
+2018-05-30 23:18:42,441 : Restoring parameters from ./ull-practical3-embedalign/model.best.validation.aer.ckpt
+2018-05-30 23:18:42,812 : Generating sentence embeddings
+2018-05-30 23:22:46,832 : Generated sentence embeddings
+2018-05-30 23:22:46,832 : Training pytorch-MLP-nhid0-adam-bs64 with (inner) 10-fold cross-validation
+2018-05-30 23:25:12,006 : Best param found at split 1: l2reg = 1e-05                 with score 78.79
+2018-05-30 23:27:41,782 : Best param found at split 2: l2reg = 0.001                 with score 78.82
+2018-05-30 23:30:12,025 : Best param found at split 3: l2reg = 0.0001                 with score 78.87
+2018-05-30 23:32:53,131 : Best param found at split 4: l2reg = 1e-05                 with score 79.21
+2018-05-30 23:35:28,027 : Best param found at split 5: l2reg = 1e-05                 with score 78.97
+2018-05-30 23:37:58,051 : Best param found at split 6: l2reg = 1e-05                 with score 79.07
+2018-05-30 23:40:56,495 : Best param found at split 7: l2reg = 0.01                 with score 79.26
+2018-05-30 23:44:28,048 : Best param found at split 8: l2reg = 0.001                 with score 79.1
+2018-05-30 23:47:49,995 : Best param found at split 9: l2reg = 0.001                 with score 79.14
+2018-05-30 23:50:12,271 : Best param found at split 10: l2reg = 0.01                 with score 78.82
+2018-05-30 23:50:16,860 : Dev acc : 79.0 Test acc : 78.35
+
+2018-05-30 23:50:16,861 : ***** Transfer task : SST Binary classification *****
+
+
+2018-05-30 23:50:17.159703: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+2018-05-30 23:50:17.159764: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-05-30 23:50:17.159775: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 
+2018-05-30 23:50:17.159783: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N 
+2018-05-30 23:50:17.159915: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10752 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0, compute capability: 3.7)
+INFO:tensorflow:Restoring parameters from ./ull-practical3-embedalign/model.best.validation.aer.ckpt
+2018-05-30 23:50:17,851 : Restoring parameters from ./ull-practical3-embedalign/model.best.validation.aer.ckpt
+2018-05-30 23:50:18,191 : Computing embedding for dev
+2018-05-30 23:50:33,780 : Computed dev embeddings
+2018-05-30 23:50:33,780 : Computing embedding for train
+2018-05-31 00:06:20,895 : Computed train embeddings
+2018-05-31 00:06:20,895 : Computing embedding for test
+2018-05-31 00:06:52,790 : Computed test embeddings
+2018-05-31 00:06:52,791 : Training pytorch-MLP-nhid0-adam-bs64 with standard validation..
+2018-05-31 00:08:36,395 : [('reg:1e-05', 65.14), ('reg:0.0001', 65.14), ('reg:0.001', 65.02), ('reg:0.01', 65.02)]
+2018-05-31 00:08:36,395 : Validation : best param found is reg = 1e-05 with score             65.14
+2018-05-31 00:08:36,395 : Evaluating...
+2018-05-31 00:09:00,461 : 
+Dev acc : 65.14 Test acc : 65.79 for             SST Binary classification
+
+2018-05-31 00:09:00,461 : ***** Transfer task : TREC *****
+
+
+2018-05-31 00:09:00.513763: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+2018-05-31 00:09:00.513833: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-05-31 00:09:00.513843: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 
+2018-05-31 00:09:00.513851: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N 
+2018-05-31 00:09:00.513985: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10752 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0, compute capability: 3.7)
+INFO:tensorflow:Restoring parameters from ./ull-practical3-embedalign/model.best.validation.aer.ckpt
+2018-05-31 00:09:01,184 : Restoring parameters from ./ull-practical3-embedalign/model.best.validation.aer.ckpt
+2018-05-31 00:10:00,329 : Computed train embeddings
+2018-05-31 00:10:05,336 : Computed test embeddings
+2018-05-31 00:10:05,337 : Training pytorch-MLP-nhid0-adam-bs64 with 10-fold cross-validation
+2018-05-31 00:12:01,282 : [('reg:1e-05', 49.82), ('reg:0.0001', 49.78), ('reg:0.001', 49.78), ('reg:0.01', 49.51)]
+2018-05-31 00:12:01,282 : Cross-validation : best param found is reg = 1e-05             with score 49.82
+2018-05-31 00:12:01,283 : Evaluating...
+/usr/local/lib/python3.5/dist-packages/SentEval-0.1.0-py3.5.egg/senteval/tools/classifier.py:140: UserWarning: volatile was removed and now has no effect. Use `with torch.no_grad():` instead.
+  Xbatch = Variable(devX[i:i + self.batch_size], volatile=True)
+2018-05-31 00:12:04,262 : 
+Dev acc : 49.82 Test acc : 53.6             for TREC
+
+2018-05-31 00:12:04,263 : ***** Transfer task : MRPC *****
+
+
+2018-05-31 00:12:04.303098: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+2018-05-31 00:12:04.303141: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-05-31 00:12:04.303151: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 
+2018-05-31 00:12:04.303160: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N 
+2018-05-31 00:12:04.303277: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10752 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0, compute capability: 3.7)
+INFO:tensorflow:Restoring parameters from ./ull-practical3-embedalign/model.best.validation.aer.ckpt
+2018-05-31 00:12:05,033 : Restoring parameters from ./ull-practical3-embedalign/model.best.validation.aer.ckpt
+2018-05-31 00:12:05,365 : Computing embedding for train
+2018-05-31 00:14:44,827 : Computed train embeddings
+2018-05-31 00:14:44,827 : Computing embedding for test
+2018-05-31 00:15:51,738 : Computed test embeddings
+2018-05-31 00:15:51,740 : Training pytorch-MLP-nhid0-adam-bs64 with 10-fold cross-validation
+2018-05-31 00:17:06,305 : [('reg:1e-05', 70.68), ('reg:0.0001', 70.68), ('reg:0.001', 70.71), ('reg:0.01', 70.9)]
+2018-05-31 00:17:06,305 : Cross-validation : best param found is reg = 0.01             with score 70.9
+2018-05-31 00:17:06,305 : Evaluating...
+2018-05-31 00:17:08,761 : Dev acc : 70.9 Test acc 71.3; Test F1 81.52 for MRPC.
+
+1
+2
+3
+4
+5
+6
+/usr/local/lib/python3.5/dist-packages/matplotlib/__init__.py:1067: UserWarning: Duplicate key in file "/home/ubuntu/.config/matplotlib/matplotlibrc", line #2
+  (fname, cnt))
+/usr/local/lib/python3.5/dist-packages/matplotlib/__init__.py:1067: UserWarning: Duplicate key in file "/home/ubuntu/.config/matplotlib/matplotlibrc", line #3
+  (fname, cnt))
+7
+8
+9
+10
+2018-05-31 00:51:08,083 : ***** Transfer task : SICK-Entailment*****
+
+
+2018-05-31 00:51:08.130096: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2018-05-31 00:51:08.222879: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:898] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-05-31 00:51:08.223275: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:00:1e.0
+totalMemory: 11.17GiB freeMemory: 11.10GiB
+2018-05-31 00:51:08.223297: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+2018-05-31 00:51:08.567133: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-05-31 00:51:08.567187: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 
+2018-05-31 00:51:08.567196: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N 
+2018-05-31 00:51:08.567474: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10752 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0, compute capability: 3.7)
+INFO:tensorflow:Restoring parameters from ./ull-practical3-embedalign/model.best.validation.aer.ckpt
+2018-05-31 00:51:09,330 : Restoring parameters from ./ull-practical3-embedalign/model.best.validation.aer.ckpt
+2018-05-31 00:51:09,740 : Computing embedding for test
+2018-05-31 00:52:58,763 : Computed test embeddings
+2018-05-31 00:52:58,763 : Computing embedding for dev
+2018-05-31 00:53:09,484 : Computed dev embeddings
+2018-05-31 00:53:09,485 : Computing embedding for train
+2018-05-31 00:54:44,571 : Computed train embeddings
+2018-05-31 00:54:44,581 : Training pytorch-MLP-nhid0-adam-bs64 with standard validation..
+/usr/local/lib/python3.5/dist-packages/SentEval-0.1.0-py3.5.egg/senteval/tools/classifier.py:123: UserWarning: volatile was removed and now has no effect. Use `with torch.no_grad():` instead.
+  Xbatch = Variable(devX[i:i + self.batch_size], volatile=True)
+/usr/local/lib/python3.5/dist-packages/SentEval-0.1.0-py3.5.egg/senteval/tools/classifier.py:124: UserWarning: volatile was removed and now has no effect. Use `with torch.no_grad():` instead.
+  ybatch = Variable(devy[i:i + self.batch_size], volatile=True)
+2018-05-31 00:54:54,715 : [('reg:1e-05', 70.4), ('reg:0.0001', 70.4), ('reg:0.001', 70.6), ('reg:0.01', 70.8)]
+2018-05-31 00:54:54,715 : Validation : best param found is reg = 0.01 with score             70.8
+2018-05-31 00:54:54,715 : Evaluating...
+2018-05-31 00:54:57,258 : 
+Dev acc : 70.8 Test acc : 72.28 for                        SICK entailment
+
+2018-05-31 00:54:57,259 : ***** Transfer task : STS14 *****
+
+
+2018-05-31 00:54:57.386832: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+2018-05-31 00:54:57.386915: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-05-31 00:54:57.386927: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 
+2018-05-31 00:54:57.386935: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N 
+2018-05-31 00:54:57.387105: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10752 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0, compute capability: 3.7)
+INFO:tensorflow:Restoring parameters from ./ull-practical3-embedalign/model.best.validation.aer.ckpt
+2018-05-31 00:54:58,068 : Restoring parameters from ./ull-practical3-embedalign/model.best.validation.aer.ckpt
+2018-05-31 00:55:08,584 : deft-forum : pearson = 0.3478, spearman = 0.3630
+2018-05-31 00:55:18,449 : deft-news : pearson = 0.6220, spearman = 0.5783
+2018-05-31 00:55:32,199 : headlines : pearson = 0.5782, spearman = 0.5705
+2018-05-31 00:55:48,774 : images : pearson = 0.6578, spearman = 0.6439
+2018-05-31 00:56:03,753 : OnWN : pearson = 0.6588, spearman = 0.7165
+2018-05-31 00:56:22,428 : tweet-news : pearson = 0.6233, spearman = 0.5527
+2018-05-31 00:56:22,428 : ALL (weighted average) : Pearson = 0.5951,             Spearman = 0.5866
+2018-05-31 00:56:22,428 : ALL (average) : Pearson = 0.5813,             Spearman = 0.5708
+
+{'SICKEntailment': {'ndev': 500, 'ntest': 4927, 'devacc': 70.8, 'acc': 72.28}, 'STS14': {'tweet-news': {'spearman': SpearmanrResult(correlation=0.552714320253843, pvalue=3.22156860724007e-61), 'nsamples': 750, 'pearson': (0.6233064091240506, 6.006514355686313e-82)}, 'all': {'spearman': {'wmean': 0.586554697229048, 'mean': 0.5708300511218753}, 'pearson': {'wmean': 0.5951356590266775, 'mean': 0.5813380591354765}}, 'headlines': {'spearman': SpearmanrResult(correlation=0.5705232857978165, pvalue=5.589791453157285e-66), 'nsamples': 750, 'pearson': (0.5781994975328155, 4.019985554664298e-68)}, 'deft-news': {'spearman': SpearmanrResult(correlation=0.578333454614915, pvalue=3.56018796171822e-28), 'nsamples': 300, 'pearson': (0.6220449118594, 1.608196603463693e-33)}, 'deft-forum': {'spearman': SpearmanrResult(correlation=0.3630168695426586, pvalue=1.831986205134358e-15), 'nsamples': 450, 'pearson': (0.34780778140957913, 3.053291793608989e-14)}, 'OnWN': {'spearman': SpearmanrResult(correlation=0.7165302641879749, pvalue=4.038459846586195e-119), 'nsamples': 750, 'pearson': (0.6588460360343789, 1.500513525706132e-94)}, 'images': {'spearman': SpearmanrResult(correlation=0.6438621123340441, pvalue=4.9441358581162626e-89), 'nsamples': 750, 'pearson': (0.6578237188526349, 3.6541350860855224e-94)}}}

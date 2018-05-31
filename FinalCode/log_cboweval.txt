@@ -1,0 +1,157 @@
+2018-05-31 17:36:13,544 : ***** Transfer task : MR *****
+
+
+2018-05-31 17:36:13,959 : Found 10302 words with word vectors, out of         20328 words
+2018-05-31 17:36:13,971 : Generating sentence embeddings
+2018-05-31 17:36:14,550 : Generated sentence embeddings
+2018-05-31 17:36:14,551 : Training pytorch-MLP-nhid0-adam-bs64 with (inner) 10-fold cross-validation
+/home/ubuntu/ULL/SentEval/senteval/tools/classifier.py:123: UserWarning: volatile was removed and now has no effect. Use `with torch.no_grad():` instead.
+  Xbatch = Variable(devX[i:i + self.batch_size], volatile=True)
+/home/ubuntu/ULL/SentEval/senteval/tools/classifier.py:124: UserWarning: volatile was removed and now has no effect. Use `with torch.no_grad():` instead.
+  ybatch = Variable(devy[i:i + self.batch_size], volatile=True)
+2018-05-31 17:38:42,332 : Best param found at split 1: l2reg = 0.001                 with score 66.66
+2018-05-31 17:40:55,699 : Best param found at split 2: l2reg = 0.01                 with score 66.64
+2018-05-31 17:43:11,494 : Best param found at split 3: l2reg = 1e-05                 with score 66.63
+2018-05-31 17:45:29,448 : Best param found at split 4: l2reg = 1e-05                 with score 66.39
+2018-05-31 17:47:47,604 : Best param found at split 5: l2reg = 1e-05                 with score 66.75
+2018-05-31 17:49:58,413 : Best param found at split 6: l2reg = 0.001                 with score 66.58
+2018-05-31 17:52:22,656 : Best param found at split 7: l2reg = 1e-05                 with score 66.61
+2018-05-31 17:54:29,151 : Best param found at split 8: l2reg = 0.01                 with score 66.64
+2018-05-31 17:56:39,077 : Best param found at split 9: l2reg = 0.01                 with score 66.37
+2018-05-31 17:58:51,960 : Best param found at split 10: l2reg = 0.01                 with score 66.19
+2018-05-31 17:58:54,855 : Dev acc : 66.55 Test acc : 65.97
+
+2018-05-31 17:58:54,857 : ***** Transfer task : CR *****
+
+
+2018-05-31 17:58:55,049 : Found 4006 words with word vectors, out of         5677 words
+2018-05-31 17:58:55,088 : Generating sentence embeddings
+2018-05-31 17:58:55,280 : Generated sentence embeddings
+2018-05-31 17:58:55,280 : Training pytorch-MLP-nhid0-adam-bs64 with (inner) 10-fold cross-validation
+2018-05-31 17:59:47,993 : Best param found at split 1: l2reg = 1e-05                 with score 73.71
+2018-05-31 18:00:42,984 : Best param found at split 2: l2reg = 0.01                 with score 73.62
+2018-05-31 18:01:37,085 : Best param found at split 3: l2reg = 0.01                 with score 73.68
+2018-05-31 18:02:36,128 : Best param found at split 4: l2reg = 1e-05                 with score 74.45
+2018-05-31 18:03:36,287 : Best param found at split 5: l2reg = 1e-05                 with score 73.62
+2018-05-31 18:05:01,978 : Best param found at split 6: l2reg = 1e-05                 with score 74.39
+2018-05-31 18:06:31,521 : Best param found at split 7: l2reg = 1e-05                 with score 73.98
+2018-05-31 18:07:46,951 : Best param found at split 8: l2reg = 1e-05                 with score 73.98
+2018-05-31 18:09:14,947 : Best param found at split 9: l2reg = 1e-05                 with score 74.28
+2018-05-31 18:10:35,381 : Best param found at split 10: l2reg = 1e-05                 with score 74.32
+2018-05-31 18:10:36,659 : Dev acc : 74.0 Test acc : 73.3
+
+2018-05-31 18:10:36,660 : ***** Transfer task : MPQA *****
+
+
+2018-05-31 18:10:37,081 : Found 5540 words with word vectors, out of         6241 words
+2018-05-31 18:10:37,101 : Generating sentence embeddings
+2018-05-31 18:10:37,591 : Generated sentence embeddings
+2018-05-31 18:10:37,593 : Training pytorch-MLP-nhid0-adam-bs64 with (inner) 10-fold cross-validation
+2018-05-31 18:13:46,653 : Best param found at split 1: l2reg = 1e-05                 with score 85.29
+2018-05-31 18:16:30,464 : Best param found at split 2: l2reg = 1e-05                 with score 85.52
+2018-05-31 18:18:50,429 : Best param found at split 3: l2reg = 1e-05                 with score 85.12
+2018-05-31 18:20:59,496 : Best param found at split 4: l2reg = 1e-05                 with score 85.4
+2018-05-31 18:23:13,182 : Best param found at split 5: l2reg = 0.01                 with score 85.23
+2018-05-31 18:25:17,645 : Best param found at split 6: l2reg = 1e-05                 with score 85.45
+2018-05-31 18:27:27,903 : Best param found at split 7: l2reg = 0.01                 with score 85.19
+2018-05-31 18:30:04,972 : Best param found at split 8: l2reg = 0.01                 with score 85.28
+2018-05-31 18:33:00,598 : Best param found at split 9: l2reg = 1e-05                 with score 85.36
+2018-05-31 18:35:47,916 : Best param found at split 10: l2reg = 1e-05                 with score 85.05
+2018-05-31 18:35:51,877 : Dev acc : 85.29 Test acc : 84.82
+
+2018-05-31 18:35:51,878 : ***** Transfer task : SUBJ *****
+
+
+2018-05-31 18:35:52,341 : Found 11625 words with word vectors, out of         22639 words
+2018-05-31 18:35:52,355 : Generating sentence embeddings
+2018-05-31 18:35:52,952 : Generated sentence embeddings
+2018-05-31 18:35:52,953 : Training pytorch-MLP-nhid0-adam-bs64 with (inner) 10-fold cross-validation
+2018-05-31 18:38:33,863 : Best param found at split 1: l2reg = 1e-05                 with score 83.54
+2018-05-31 18:41:20,320 : Best param found at split 2: l2reg = 1e-05                 with score 83.83
+2018-05-31 18:44:13,734 : Best param found at split 3: l2reg = 1e-05                 with score 84.13
+2018-05-31 18:47:02,949 : Best param found at split 4: l2reg = 1e-05                 with score 84.06
+2018-05-31 18:49:46,742 : Best param found at split 5: l2reg = 1e-05                 with score 83.73
+2018-05-31 18:52:30,546 : Best param found at split 6: l2reg = 1e-05                 with score 83.92
+2018-05-31 18:55:23,115 : Best param found at split 7: l2reg = 0.01                 with score 83.89
+2018-05-31 18:58:19,476 : Best param found at split 8: l2reg = 0.01                 with score 84.34
+2018-05-31 19:01:26,932 : Best param found at split 9: l2reg = 0.01                 with score 84.01
+2018-05-31 19:04:23,845 : Best param found at split 10: l2reg = 1e-05                 with score 83.81
+2018-05-31 19:04:28,737 : Dev acc : 83.93 Test acc : 83.32
+
+2018-05-31 19:04:28,739 : ***** Transfer task : SST Binary classification *****
+
+
+2018-05-31 19:04:29,522 : Found 9571 words with word vectors, out of         17561 words
+2018-05-31 19:04:29,529 : Computing embedding for dev
+2018-05-31 19:04:29,581 : Computed dev embeddings
+2018-05-31 19:04:29,581 : Computing embedding for train
+2018-05-31 19:04:32,095 : Computed train embeddings
+2018-05-31 19:04:32,095 : Computing embedding for test
+2018-05-31 19:04:32,285 : Computed test embeddings
+2018-05-31 19:04:32,286 : Training pytorch-MLP-nhid0-adam-bs64 with standard validation..
+2018-05-31 19:06:25,865 : [('reg:1e-05', 70.07), ('reg:0.0001', 70.07), ('reg:0.001', 70.07), ('reg:0.01', 70.07)]
+2018-05-31 19:06:25,865 : Validation : best param found is reg = 1e-05 with score             70.07
+2018-05-31 19:06:25,866 : Evaluating...
+2018-05-31 19:06:54,323 : 
+Dev acc : 70.07 Test acc : 67.0 for             SST Binary classification
+
+2018-05-31 19:06:54,324 : ***** Transfer task : TREC *****
+
+
+2018-05-31 19:06:54,589 : Found 4399 words with word vectors, out of         9767 words
+2018-05-31 19:06:54,779 : Computed train embeddings
+2018-05-31 19:06:54,794 : Computed test embeddings
+2018-05-31 19:06:54,794 : Training pytorch-MLP-nhid0-adam-bs64 with 10-fold cross-validation
+2018-05-31 19:09:06,938 : [('reg:1e-05', 63.85), ('reg:0.0001', 63.85), ('reg:0.001', 63.85), ('reg:0.01', 63.85)]
+2018-05-31 19:09:06,938 : Cross-validation : best param found is reg = 1e-05             with score 63.85
+2018-05-31 19:09:06,938 : Evaluating...
+/home/ubuntu/ULL/SentEval/senteval/tools/classifier.py:140: UserWarning: volatile was removed and now has no effect. Use `with torch.no_grad():` instead.
+  Xbatch = Variable(devX[i:i + self.batch_size], volatile=True)
+2018-05-31 19:09:10,315 : 
+Dev acc : 63.85 Test acc : 67.2             for TREC
+
+2018-05-31 19:09:10,316 : ***** Transfer task : MRPC *****
+
+
+2018-05-31 19:09:10,724 : Found 8796 words with word vectors, out of         19556 words
+2018-05-31 19:09:10,727 : Computing embedding for train
+2018-05-31 19:09:11,153 : Computed train embeddings
+2018-05-31 19:09:11,154 : Computing embedding for test
+2018-05-31 19:09:11,338 : Computed test embeddings
+2018-05-31 19:09:11,344 : Training pytorch-MLP-nhid0-adam-bs64 with 10-fold cross-validation
+2018-05-31 19:10:13,472 : [('reg:1e-05', 71.98), ('reg:0.0001', 71.98), ('reg:0.001', 71.98), ('reg:0.01', 71.98)]
+2018-05-31 19:10:13,473 : Cross-validation : best param found is reg = 1e-05             with score 71.98
+2018-05-31 19:10:13,473 : Evaluating...
+2018-05-31 19:10:14,978 : Dev acc : 71.98 Test acc 70.32; Test F1 80.28 for MRPC.
+
+2018-05-31 19:10:14,978 : ***** Transfer task : SICK-Entailment*****
+
+
+2018-05-31 19:10:15,189 : Found 1619 words with word vectors, out of         2414 words
+2018-05-31 19:10:15,194 : Computing embedding for dev
+2018-05-31 19:10:15,232 : Computed dev embeddings
+2018-05-31 19:10:15,232 : Computing embedding for train
+2018-05-31 19:10:15,573 : Computed train embeddings
+2018-05-31 19:10:15,573 : Computing embedding for test
+2018-05-31 19:10:15,952 : Computed test embeddings
+2018-05-31 19:10:15,964 : Training pytorch-MLP-nhid0-adam-bs64 with standard validation..
+2018-05-31 19:10:27,936 : [('reg:1e-05', 74.6), ('reg:0.0001', 74.6), ('reg:0.001', 74.6), ('reg:0.01', 74.6)]
+2018-05-31 19:10:27,937 : Validation : best param found is reg = 1e-05 with score             74.6
+2018-05-31 19:10:27,937 : Evaluating...
+2018-05-31 19:10:30,946 : 
+Dev acc : 74.6 Test acc : 73.76 for                        SICK entailment
+
+2018-05-31 19:10:30,947 : ***** Transfer task : STS14 *****
+
+
+2018-05-31 19:10:31,258 : Found 6709 words with word vectors, out of         9119 words
+2018-05-31 19:10:31,329 : deft-forum : pearson = 0.2476, spearman = 0.2862
+2018-05-31 19:10:31,382 : deft-news : pearson = 0.5271, spearman = 0.5383
+2018-05-31 19:10:31,482 : headlines : pearson = 0.4462, spearman = 0.4154
+2018-05-31 19:10:31,584 : images : pearson = 0.4053, spearman = 0.4294
+2018-05-31 19:10:31,685 : OnWN : pearson = 0.5521, spearman = 0.6136
+2018-05-31 19:10:31,794 : tweet-news : pearson = 0.6372, spearman = 0.6024
+2018-05-31 19:10:31,794 : ALL (weighted average) : Pearson = 0.4800,             Spearman = 0.4896
+2018-05-31 19:10:31,794 : ALL (average) : Pearson = 0.4693,             Spearman = 0.4809
+
+{'SST2': {'ntest': 1821, 'ndev': 872, 'acc': 67.0, 'devacc': 70.07}, 'MRPC': {'ntest': 1725, 'ndev': 4076, 'acc': 70.32, 'devacc': 71.98, 'f1': 80.28}, 'SUBJ': {'ntest': 10000, 'ndev': 10000, 'acc': 83.32, 'devacc': 83.93}, 'MPQA': {'ntest': 10606, 'ndev': 10606, 'acc': 84.82, 'devacc': 85.29}, 'MR': {'ntest': 10662, 'ndev': 10662, 'acc': 65.97, 'devacc': 66.55}, 'CR': {'ntest': 3775, 'ndev': 3775, 'acc': 73.3, 'devacc': 74.0}, 'SICKEntailment': {'ntest': 4927, 'ndev': 500, 'acc': 73.76, 'devacc': 74.6}, 'STS14': {'all': {'pearson': {'wmean': 0.4800409324031032, 'mean': 0.46925018365544574}, 'spearman': {'wmean': 0.48955206616488456, 'mean': 0.48086290599036}}, 'tweet-news': {'pearson': (0.6372021418906347, 1.1183784685215392e-86), 'nsamples': 750, 'spearman': SpearmanrResult(correlation=0.6023673496646011, pvalue=2.9598824501351794e-75)}, 'deft-news': {'pearson': (0.527115096465916, 7.487434695269498e-23), 'nsamples': 300, 'spearman': SpearmanrResult(correlation=0.5382602992464969, pvalue=6.2033419726319245e-24)}, 'deft-forum': {'pearson': (0.24756845509402237, 1.0367946466076454e-07), 'nsamples': 450, 'spearman': SpearmanrResult(correlation=0.28615231392459717, pvalue=6.286136872559848e-10)}, 'headlines': {'pearson': (0.44615182515815616, 5.770178313823489e-38), 'nsamples': 750, 'spearman': SpearmanrResult(correlation=0.41538792955216913, pvalue=1.2012616008201897e-32)}, 'OnWN': {'pearson': (0.5521359068003506, 4.54891853326888e-61), 'nsamples': 750, 'spearman': SpearmanrResult(correlation=0.6136182165981732, pvalue=8.663858975745716e-79)}, 'images': {'pearson': (0.40532767652359486, 5.044665742622932e-31), 'nsamples': 750, 'spearman': SpearmanrResult(correlation=0.42939132695612237, pvalue=5.327740171354783e-35)}}, 'TREC': {'ntest': 500, 'ndev': 5452, 'acc': 67.2, 'devacc': 63.85}}

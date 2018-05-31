@@ -1,0 +1,8 @@
+torch
+torchvision
+sklearn
+numpy
+dill
+gensim
+cython
+virtualenv
